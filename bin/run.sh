@@ -65,4 +65,7 @@ java -jar "${test_runner_jar}" "${build_log_file}" "${tests_results_file}" "${re
 # change workdir back to the original input_dir in the final results file
 sed -i "s~${workdir}~${input_dir}~g" "${results_file}"
 
+ls "${workdir}/test-reports"
+ls "${workdir_target}"
+
 echo "${slug}: done"
